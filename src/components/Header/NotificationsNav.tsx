@@ -1,15 +1,11 @@
 import { Flex, HStack, Icon } from "@chakra-ui/react";
 import { RiNotificationLine, RiUserAddLine } from "react-icons/ri";
-import { Profile } from "./Profile";
 
 export function NotificationNav () {
   return (
-    <Flex align="center" ml="auto">
-      <HStack spacing="8" mx="8" pr="8" py="1" borderRightWidth={1} borderColor="gray.700">
-        <Icon as={RiNotificationLine} fontSize="20" />
-        <Icon as={RiUserAddLine} fontSize="20" />
-      </HStack>
-      <Profile />
-    </Flex> 
+    <HStack spacing={["6","8"]} mx={["6","8"]} pr={["6","8"]} py="1" borderRightWidth={1} borderColor="gray.700">
+      <Icon as={RiNotificationLine} fontSize="20" />
+      <Icon as={RiUserAddLine} fontSize="20" />
+    </HStack>
   );
 }
