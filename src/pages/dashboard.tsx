@@ -79,11 +79,11 @@ export default function Dashboard() {
       <Flex w="100%" my="6" maxWidth={1480} mx="auto" px="6">
         <Sidebar />
         <SimpleGrid flex="1" gap="4" minChildWidth="320px" alignItems="flex-start">
-          <Box p="8" bg="gray.800" borderRadius={8} pb="4" >
+          <Box p={["6","8"]} bg="gray.800" borderRadius={8} pb="4" >
             <Text fontSize="lg" mb="4">Inscritos da Semana</Text>
             <ReactApexChart options={options} series={series} type="area" height={175} />
           </Box>
-          <Box p="8" bg="gray.800" borderRadius={8} pb="4" >
+          <Box p={["6","8"]} bg="gray.800" borderRadius={8} pb="4" >
             <Text fontSize="lg" mb="4">Taxa de abertura</Text>
             <ReactApexChart options={options2} series={series2} type="donut" height={210} />
           </Box>
